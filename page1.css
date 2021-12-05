@@ -15,27 +15,25 @@ h1{
     width: 100%;
     justify-content: space-around;
     justify-items: center; 
+    grid-template-columns: repeat(3,1fr);
     grid-template-areas:
-    'big big main'
-    'big big mai'
-    'main main main';
+    'big big main1'
+    'big big main2'
+    'main3 main4 main5';
     display: grid;
 }
 
 .grid-item{
+    border-radius: 20px;
     width: 100%;
 }
 
 .grid-item1 { grid-area: big; }
-.grid-item2 { grid-area: main; }
-.grid-item3 { grid-area: main; }
-.grid-item4 { grid-area: main; }
-.item-item5 { grid-area: main; }
-
-.big-grid-item{
-    grid-row: 1/2 span;
-    grid-column: 1/2 span;
-}
+.grid-item2 { grid-area: main1; }
+.grid-item3 { grid-area: main2; }
+.grid-item4 { grid-area: main3; }
+.item-item5 { grid-area: main4; }
+.item-item6 { grid-area: main5; }
 
 a{
     text-decoration: none;
